@@ -1,0 +1,10 @@
+.home-page {
+	.logo {
+		max-width: 200px;
+		margin: 0 auto 20px;
+
+		@media screen and (max-width: 767px) {
+			margin-top: 0;
+		}
+	}
+}

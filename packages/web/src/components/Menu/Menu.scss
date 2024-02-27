@@ -1,0 +1,116 @@
+@import '../../assets/css/variables.scss';
+@import '../../assets/css/mixin.scss';
+
+.card-menu {
+	@media screen and (max-width: 639px) {
+		border-radius: 0 !important;
+	}
+
+	.thumb-image {
+		margin-right: 15px;
+		min-width: 100px;
+
+		.photo {
+			width: 100px;
+			height: 100px;
+
+			&.-non-found-image {
+				background-image: url('https://fakeimg.pl/200x200/dddddd/999999?text=No+image&font=bebas') !important;
+				background-position: center center;
+				background-size: contain;
+			}
+		}
+	}
+
+	.info {
+		display: flex;
+		flex-flow: column;
+		justify-content: space-between;
+		line-height: 1;
+	}
+
+	.name {
+		font-size: rem(22);
+	}
+
+	.discounted-price {
+		font-size: rem(16);
+		color: gray;
+	}
+
+	.full-price {
+		color: green;
+		font-size: rem(26);
+	}
+}
+
+.card-full-menu {
+	.header {
+		padding: 5px 15px;
+
+		@media screen and (max-width: 639px) {
+			border-bottom: 1px solid var(--light-gray-100);
+		}
+	}
+
+	.primary {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		line-height: 1;
+		padding: 5px 0;
+
+		@media screen and (max-width: 639px) {
+			align-items: baseline;
+			flex-flow: column;
+		}
+	}
+
+	.secondary {
+		@media screen and (min-width: 640px) {
+			padding: 10px 0 5px;
+			border-top: 1px solid var(--light-gray-100);
+		}
+	}
+
+	.list-menu {
+		font-size: rem(20);
+
+		> li {
+			padding: 10px 15px;
+		}
+	}
+
+	.price {
+		display: flex;
+		align-items: center;
+	}
+
+	.discounted-price {
+		font-size: rem(16);
+		color: gray;
+		margin-right: 5px;
+	}
+
+	.full-price {
+		color: green;
+		font-size: rem(35);
+	}
+
+	.list-option-menu {
+		color: gray;
+		margin-bottom: 5px;
+
+		input[type="checkbox"] {
+			width: 20px;
+			height: 20px;
+			margin-right: 10px;
+		}
+
+		li {
+			display: flex;
+			align-items: center;
+			border: none;
+		}
+	}
+}

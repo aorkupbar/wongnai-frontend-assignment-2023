@@ -1,0 +1,63 @@
+@import '../../assets/css/variables.scss';
+@import '../../assets/css/mixin.scss';
+
+.restaurant-page {
+	.header-title {
+		display: flex;
+		line-height: 1;
+		margin-bottom: 15px;
+		justify-content: space-between;
+		align-items: center;
+
+		.time {
+			font-size: rem(26);
+		}
+
+		@media screen and (max-width: 639px) {
+			flex-flow: column;
+
+			.time {
+				font-size: rem(22);
+			}
+		}
+	}
+
+	.time {
+		font-size: rem(18);
+		color: $color-info;
+	}
+}
+
+.card-restaurant {
+	flex-flow: column;
+
+	.thumb-image {
+		border-radius: rem($base-border-radius);
+		overflow: hidden;
+		padding-bottom: 66%;
+		position: relative;
+
+		.photo {
+			width: 100%;
+			height: 100%;
+			display: block;
+			position: absolute;
+			background-position: center center;
+			background-size: cover;
+		}
+	}
+
+	.info {
+		padding: 10px 0 0;
+	}
+
+	.name {
+		font-size: rem(26);
+		font-weight: 700;
+	}
+
+	.time {
+		font-size: rem(18);
+		line-height: 1;
+	}
+}
